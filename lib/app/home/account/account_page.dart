@@ -34,7 +34,7 @@ class AccountPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Account'),
         actions: <Widget>[
-          FlatButton(
+          MaterialButton(
             child: Text(
               'Logout',
               style: TextStyle(

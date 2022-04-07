@@ -11,9 +11,9 @@ void main() {
         onPressed: () => pressed = true,
       )),
     );
-    final button = find.byType(RaisedButton);
+    final button = find.byType(MaterialButton);
     expect(button, findsOneWidget);
-    expect(find.byType(FlatButton), findsNothing);
+    expect(find.byType(MaterialButton), findsNothing);
     expect(find.text('tap me'), findsOneWidget);
     await tester.tap(button);
     expect(pressed, true);
